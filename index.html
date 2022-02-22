@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo"><img src="logo1.gif" alt=""></a>
+            <div class="mainer">
+                <ul>
+                    <li><a href="http://">Home</a></li>
+                    <li><a href="about/about.html">About</a></li>
+                    <li><a href="http://">Services</a></li>
+                    <li><a href="portfolio/portfolly2.html">Projects</a></li>
+                    <li><a href="http://">Team</a></li>
+                    <li><a href="contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="toggle" onclick="toggle()" ></div>
+        </header>
+        
+        <div class="content" id="blur">
+            <h2>Hello. <br>I am <span>Kelvin</span></h2>
+            <p>I am a web designer and developer. I like to build creative designs from scratch and i experiment alot. 
+                I am quietly confident, naturally curious, and perpetually working on improving my skills one design problem at a time</p>
+                 <a href="#" onclick="left()">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="http://"><img src="git.png"></a></li>
+            <li><a href="http://"><img src="twitter.png"></a></li>
+            <li><a href="http://"><img src="linkedin.png"></a></li>
+            <li><a href="http://"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li style="--clr:#00ade1">
+                <a href="#" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+            </li>
+            <li style="--clr: #ff6493">
+                <a href="about/about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+                </li>
+            <li style="--clr: #ffdd1c">
+                <a href="#" data-text="&nbsp;Services">&nbsp;Services&nbsp;</a>
+            </li>
+            <li style="--clr: rgb(113, 241, 156)">
+                <a href="about/about.html" data-text="&nbsp;Projects">&nbsp;Projects&nbsp;</a>
+            </li>
+            <li style="--clr: #00dc82">
+                <a href="#" data-text="&nbsp;Team">&nbsp;Team&nbsp;</a>
+            </li>
+            <li style="--clr: #dceed4">
+                <a href="contact/contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                </li>
+        </ul>
+    </div>
+
+
+    <script>
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</body>
+</html>
