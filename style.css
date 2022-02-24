@@ -191,16 +191,51 @@ header .mainer ul li a:hover:before {
     color: #fff;
     font-weight: 300;
 }
-.content a {
+.content .btn a {
     position: relative;
     display: inline-block;
     margin-top: 20px;
-    background: #fff;
-    color: #000;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+.content .btn:hover a {
+    letter-spacing: 2px;
+}
+.content .btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.content .btn:hover a::before {
+    transform: skewX(45deg) translateX(200%);
+}
+.content .btn::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 1;
 }
 .sci {
     position: absolute;
@@ -247,10 +282,13 @@ header .mainer ul li a:hover:before {
     .banner.active {
         transform: translateX(-250px);
     }
+    .banner.active+#navigation {
+        visibility: visible;
+    }
     #navigation {
         height: 100vh;
         width: 250px;
-        visibility: visible;
+        
     }
     #navigation ul li a {
         font-size: 1.5em;
