@@ -4,28 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>Document</title>
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <h2 class="title">Scroll To See Magic Again.....</h2>
-    <section></section>
-    <main>
-        <!-- <h2>Also NIGAAAAAAAAAAAAAAAAAAAAA</h2> -->
+    <section>
         <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci incidunt, dolores iusto eius, vitae cumque sint similique, alias error saepe voluptatem fugiat distinctio non quia. Sapiente unde tempora et dolorem.
-            Vero in nobis et esse eligendi, temporibus rem ex nostrum? Ipsam fugit quod ratione dolorem reiciendis necessitatibus molestiae beatae. Autem dignissimos labore eos reiciendis similique quia dolore, quaerat dolorum nam.
-            Quae nam labore, inventore, sapiente tempora reprehenderit soluta laudantium nesciunt impedit est accusamus autem, molestias provident odit sed saepe architecto cum facere. Eos illo odit odio dolor, itaque necessitatibus eius.
-            </p>
-        
-    </main>
+        Vero in nobis et esse eligendi, temporibus rem ex nostrum? Ipsam fugit quod ratione dolorem reiciendis necessitatibus molestiae beatae. Autem dignissimos labore eos reiciendis similique quia dolore, quaerat dolorum nam.
+        Quae nam labore, inventore, sapiente tempora reprehenderit soluta laudantium nesciunt impedit est accusamus autem, molestias provident odit sed saepe architecto cum facere. Eos illo odit odio dolor, itaque necessitatibus eius.
+    </p>
+    </section>
     <script src="anime.min.js"></script>
     <script>
-        var section = document.querySelector('section');
-        window.addEventListener('scroll', function(){
-            var value = window.scrollY;
-            section.style.clipPath = " circle("+ value +"px at center)"
-        })
-
         const text = document.querySelector('.text');
         text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
