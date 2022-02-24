@@ -8,6 +8,7 @@
 }
 body {
     min-height: 100vh;
+    background: #020403;
 }
 
 header {
@@ -288,7 +289,6 @@ header .mainer ul li a:hover:before {
     #navigation {
         height: 100vh;
         width: 250px;
-        
     }
     #navigation ul li a {
         font-size: 1.5em;
