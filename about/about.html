@@ -10,64 +10,57 @@
 <body>
     <h2 class="title">Scroll To See Magic Again.....</h2>
     <section></section>
-    <div class="container">
-        <h2>Also NIGAAAAAAAAAAAAAAAAAAAAA</h2>
-        <p>Lorem ipsum dolor sit, amet
-             consectetur adipisicing elit.
-              Sint mollitia vero recusandae,
-               <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-               repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores incidunt doloremque, enim d
-                ebitis similique non <br> asperiores omnis ipsa itaque deleniti sapiente excepturi?
-                <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                 veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                 adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores incidunt doloremque, enim d
-                 ebitis similique non <br> asperiores omnis ipsa itaque deleniti sapiente excepturi? <br><br>Lorem ipsum dolor sit, amet
-                 consectetur adipisicing elit.
-                  Sint mollitia vero recusandae,
-                   <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                   repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                    veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores incidunt doloremque, enim d
-                    ebitis similique non <br> asperiores omnis ipsa itaque deleniti sapiente excepturi?
-                    <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                    repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                     veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                     adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores incidunt doloremque, enim d
-                     ebitis similique non <br> asperiores omnis ipsa itaque deleniti sapiente excepturi?
-                     <br><br>Lorem ipsum dolor sit, amet
-                 consectetur adipisicing elit.
-                  Sint mollitia vero recusandae,
-                   <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                   repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                    veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores incidunt doloremque, enim d
-                    ebitis similique non <br> asperiores omnis ipsa itaque deleniti sapiente excepturi?
-                    <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                    repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                     veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                     adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores inci
-                     <br><br>Lorem ipsum dolor sit, amet
-                 consectetur adipisicing elit.
-                  Sint mollitia vero recusandae,
-                   <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                   repellendus qui vel nostrum molestiae cum nisi quia excepturi
-                    veritatis! Provident. Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iste et, assumenda molestias soluta nisi velit dicta maiores incidunt doloremque, enim d
-                    ebitis similique non <br> asperiores omnis ipsa itaque deleniti sapiente excepturi?
-                    <br> assumenda iste velit odio tempora deleniti fugiat, <br> 
-                    
+    <main>
+        <!-- <h2>Also NIGAAAAAAAAAAAAAAAAAAAAA</h2> -->
+        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci incidunt, dolores iusto eius, vitae cumque sint similique, alias error saepe voluptatem fugiat distinctio non quia. Sapiente unde tempora et dolorem.
+            Vero in nobis et esse eligendi, temporibus rem ex nostrum? Ipsam fugit quod ratione dolorem reiciendis necessitatibus molestiae beatae. Autem dignissimos labore eos reiciendis similique quia dolore, quaerat dolorum nam.
+            Quae nam labore, inventore, sapiente tempora reprehenderit soluta laudantium nesciunt impedit est accusamus autem, molestias provident odit sed saepe architecto cum facere. Eos illo odit odio dolor, itaque necessitatibus eius.
             </p>
         
-    </div>
+    </main>
+    <script src="anime.min.js"></script>
     <script>
         var section = document.querySelector('section');
         window.addEventListener('scroll', function(){
             var value = window.scrollY;
             section.style.clipPath = " circle("+ value +"px at center)"
         })
+
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+        const animation = anime.timeline({
+            targets :'.text span',
+            easing : 'easeInOutExpo',
+            loop : true,
+        });
+
+        animation
+        .add({
+            rotate : function(){
+                return anime.random(-360,360)
+            },
+            translateX : function(){
+                return anime.random(-500,500)
+            },
+            translateY : function(){
+                return anime.random(-500,500)
+            },
+            duration: 5000,
+            delay : anime.stagger(20),
+        })
+
+
+        .add({
+            rotate : 0,
+            translateX : 0,
+            translateY : 0,
+            duration: 5000,
+            delay : anime.stagger(20),
+        })
+
+
+
     </script>
 </body>
 </html>

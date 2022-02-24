@@ -42,13 +42,36 @@ section {
     background-size: cover;
     clip-path: circle(0px at center);
 }
-.container {
+main {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 200vh;
-    background: #fff;
+    min-height: 100vh;
+    width: 100%;
     padding: 100px;
+    overflow: hidden;
+    background: #130e23;
 }
-.container h2 {
+
+main .text {
+    position: relative;
+    text-align: center;
+    color: #00cefe;
+    margin: 40px;
+    max-width: 650px;
+}
+main.text span {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+main h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
