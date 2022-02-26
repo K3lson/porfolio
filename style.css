@@ -270,6 +270,12 @@ header .mainer ul li a:hover:before {
     header {
         padding: 20px 50px;
     }
+    .content {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 300;
+        margin-left: -40px;
+    }
     .banner {
         position: absolute;
         width: 100%;

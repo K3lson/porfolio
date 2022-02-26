@@ -62,7 +62,7 @@ body::after {
     backdrop-filter: blur(5px);
 }
 .container .card .content {
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     transition: 0.5s;
     transform: translateY(100px);
@@ -79,6 +79,7 @@ body::after {
     font-size: 8em;
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
+    opacity: 1;
 }
 .container .card .content h3 {
     font-size: 1.8em;
@@ -90,7 +91,7 @@ body::after {
     color: #fff;
     font-weight: 300;
 }
-.container .card .content a {
+/* .container .card .content a {
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -101,8 +102,11 @@ body::after {
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+} */
+.container .card .content img {
+    max-height: 390px;
+    min-height: 290px;
 }
-
 @media (max-width:767px) {
     .container .card {
         position: relative;
@@ -120,18 +124,21 @@ body::after {
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(5px);
     }
+    .container .card .content img {
+        max-height: 190px;
+        min-height: 150px;
+    }
     .container .card .content {
-        margin-top: -150px;
         padding: 10px;
         text-align: center;
-        /* transition: 0.5s;
-        transform: translateY(100px); */
-        opacity: 1;
+        transition: 0.5s;
+        transform: translateY(100px);
+        opacity: 0;
     }
-    /* .container .card:hover .content {
+    .container .card:hover .content {
         transform: translateY(0px);
         opacity: 1;
-    } */
+    }
     .container .card .content h2 {
         position: absolute;
         top: -80px;
@@ -150,7 +157,7 @@ body::after {
         color: #fff;
         font-weight: 300;
     }
-    .container .card .content a {
+    /* .container .card .content a {
         position: relative;
         display: inline-block;
         padding: 4px 10px;
@@ -161,5 +168,5 @@ body::after {
         text-decoration: none;
         font-weight: 500;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    }
+    } */
 }
