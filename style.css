@@ -271,8 +271,24 @@ header .mainer ul li a:hover:before {
         padding: 20px 50px;
     }
     .banner {
-        padding: 100px 50px 150px;
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        background: url(bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 2;
+        
     }
+    /* .banner {
+        padding: 100px 50px 150px;
+    } */
     .banner h2 {
         font-size: 1.8em;
     }

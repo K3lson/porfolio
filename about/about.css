@@ -7,6 +7,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body {
+    background: #130e23;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    width: 500px;
+}
 section {
     position: relative;
     display: flex;
@@ -34,4 +49,11 @@ section .text {
 section .text span {
     position: relative;
     display: inline-block;
+}
+
+@media (max-width:767px) {
+    .pic img {
+        min-height: 100px;
+        width: 100%;
+    }
 }
