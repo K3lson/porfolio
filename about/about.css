@@ -10,11 +10,19 @@
 section {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
     background: #130e23;
+}
+section .head {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+    font-size: 2rem;
 }
 section .text {
     position: relative;
