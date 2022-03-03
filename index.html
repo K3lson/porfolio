@@ -54,7 +54,7 @@
                 <a href="#wrk" data-text="&nbsp;Works">&nbsp;Works&nbsp;</a>
             </li>
             <li style="--clr: #dceed4">
-                <a href="contact/contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                <a href="#contact" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
                 </li>
         </ul>
     </div>
@@ -120,7 +120,7 @@
         </ul>
     </div>
     <div class="bigBox" id="wrk">
-        <h3>MY WORK</h3>
+        <!-- <h3>MY WORK</h3> -->
         <div class="card">
             <div class="imgBx">
                 <img src="works/mask.png" alt="">
@@ -128,6 +128,7 @@
             <div class="content">
                 <h2>Mayo Clinic</h2>
                 <p>I cloned Mayo Clinic Landing page using <span style="font-weight: bold;">HTML and CSS</span></p>
+                <br>
                 <a href="https://github.com/K3lson/Mayo-Clinic">CODE</a>
                 <a href="https://k3lson.github.io/Mayo-Clinic/">LIVE DEMO</a>
             </div>
@@ -151,7 +152,7 @@
             </div>
             <div class="content">
                 <h2>Card three</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor esse necessitatibus nulla cum facilis minima delectus nostrum voluptatem id voluptate, dolores eligendi quidem accusamus ducimus sed minus fuga exercitationem officiis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor esse necessitatibus</p>
                 <br>
                 <br>
                 <a href="http://">CODE</a>
@@ -161,7 +162,7 @@
             <!-- <div class="element1"></div>
             <div class="element2"></div> -->
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Contact</h2>
         <p>
             I am seek for a Junior/entry-level/internship opportunities where i can put my skills to use.I have strong critical thinking and problem solving skills with the ability to make suggestions that will help improve functionality. I am team oriented and believe in working together to meet client obligations and company goals. I have the ability to work under pressure and meet tight deadlines while maintaining a friendly and positive attitude.
@@ -184,7 +185,7 @@
         ScrollReveal({ reset: true });
 
         ScrollReveal().reveal(".about", {
-            duration: 1000,
+            duration: 1500,
             origin: "top",
             distance: "200px",
             easing: "cubic-bezier(0.5, 0, 0, 0.5)",
@@ -194,7 +195,7 @@
             }
             });
          ScrollReveal().reveal(".tools", {
-            duration: 1000,
+            duration: 1500,
             origin: "top",
             distance: "200px",
             easing: "cubic-bezier(0.5, 0, 0, 0.5)",
@@ -204,7 +205,7 @@
             }
             });   
             ScrollReveal().reveal(".bigBox", {
-            duration: 1000,
+            duration: 1500,
             origin: "top",
             distance: "200px",
             easing: "cubic-bezier(0.5, 0, 0, 0.5)",
@@ -212,7 +213,17 @@
             x: 5,
             z: -0
             }
-            });   
+            });
+            ScrollReveal().reveal(".contact", {
+            duration: 1500,
+            origin: "top",
+            distance: "200px",
+            easing: "cubic-bezier(0.5, 0, 0, 0.5)",
+            rotate: {
+            x: 5,
+            z: -0
+            }
+            });      
 
 
 
