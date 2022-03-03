@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Kelvin|Home</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <section class="banner" id="sec">
@@ -127,8 +128,6 @@
             <div class="content">
                 <h2>Mayo Clinic</h2>
                 <p>I cloned Mayo Clinic Landing page using <span style="font-weight: bold;">HTML and CSS</span></p>
-                <br>
-                <br>
                 <a href="https://github.com/K3lson/Mayo-Clinic">CODE</a>
                 <a href="https://k3lson.github.io/Mayo-Clinic/">LIVE DEMO</a>
             </div>
@@ -162,9 +161,62 @@
             <!-- <div class="element1"></div>
             <div class="element2"></div> -->
     </div>
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>
+            I am seek for a Junior/entry-level/internship opportunities where i can put my skills to use.I have strong critical thinking and problem solving skills with the ability to make suggestions that will help improve functionality. I am team oriented and believe in working together to meet client obligations and company goals. I have the ability to work under pressure and meet tight deadlines while maintaining a friendly and positive attitude.
+            <br>
+            <br>
+            Feel free to reach out to me for an questions or open source contributions
+        </p>
+        <br>
+        <button><a href="mailto:n3lsonfree@gmail.com">Email Me</a></button>
+        <br>
+        <!-- <div class="reach">
+            
+            <span><a href="#home"><ion-icon name="arrow-up-outline"></ion-icon></a></span>
+        </div> -->
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
+
+        ScrollReveal({ reset: true });
+
+        ScrollReveal().reveal(".about", {
+            duration: 1000,
+            origin: "top",
+            distance: "200px",
+            easing: "cubic-bezier(0.5, 0, 0, 0.5)",
+            rotate: {
+            x: 20,
+            z: -0
+            }
+            });
+         ScrollReveal().reveal(".tools", {
+            duration: 1000,
+            origin: "top",
+            distance: "200px",
+            easing: "cubic-bezier(0.5, 0, 0, 0.5)",
+            rotate: {
+            x: 20,
+            z: -0
+            }
+            });   
+            ScrollReveal().reveal(".bigBox", {
+            duration: 1000,
+            origin: "top",
+            distance: "200px",
+            easing: "cubic-bezier(0.5, 0, 0, 0.5)",
+            rotate: {
+            x: 5,
+            z: -0
+            }
+            });   
+
+
+
+
         function toggle(){
             var sec = document.getElementById('sec');
             var nav = document.getElementById('navigation');

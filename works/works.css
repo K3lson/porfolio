@@ -1,6 +1,6 @@
 .bigBox {
     position: relative;
-    top: 100vh;
+    top: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +97,9 @@
         flex-direction: column;
         box-sizing: 0 5px 20px rgba(0,0,0,0.5);
         transition: 0.3s ease-in-out;
+    }
+    .bigBox .card:hover {
+        height: 300px;
     }
     .bigBox h3 {
         position: absolute;

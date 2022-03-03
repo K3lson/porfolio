@@ -2,6 +2,7 @@
 @import url(about/about.css);
 @import url(tools/style.css);
 @import url(works/works.css);
+@import url(contact.css);
 
 * {
     margin: 0;
@@ -12,6 +13,23 @@
 html {
     scroll-behavior: smooth;
 }
+.scroll {
+    opacity: 0;
+    transform: scale(1.2);
+}
+@media (prefers-reduced-motion: no-preference) {
+    .scroll {
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+  }
+  
+  .scroll-transition {
+      opacity: 1;
+      transform: none;
+  }
+
+
+
 body {
     margin-top: 0;
     min-height: 100vh;

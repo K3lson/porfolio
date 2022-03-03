@@ -13,6 +13,7 @@ body {
 .about {
     position: relative;
     top: 100vh;
+    transition: 0.5s;
     /* background: url(/bgx.jpg);
     background-size: cover; */
 }
