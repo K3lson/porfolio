@@ -1,0 +1,108 @@
+.bigBox {
+    position: relative;
+    top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    /* padding: 30px; */
+    background: #252839;
+}
+.bigBox h3 {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    font-size: 4em;
+    text-decoration: underline;
+    color: #fff;
+}
+.bigBox .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: goldenrod;
+    margin: 30px 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.bigBox .card:hover {
+    height: 500px;
+}
+.bigBox .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.bigBox .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.bigBox .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.bigBox .card .content a{
+    background: goldenrod;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #111;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.bigBox .card .content a:hover {
+    background: #111;
+    color: #fff;
+}
+.bigBox .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -25px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width:1180px) {
+    .bigBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+        top: 100vh;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .bigBox .card {
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background: goldenrod;
+        margin: 60px 30px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: 0 5px 20px rgba(0,0,0,0.5);
+        transition: 0.3s ease-in-out;
+    }
+    .bigBox h3 {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        font-size: 2em;
+        text-decoration: dashed;
+    }
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@900&display=swap');
 
-* 
+/* * 
 {
     margin: 0;
     padding: 0;
@@ -9,47 +9,139 @@
 }
 body {
     background: #130e23;
+} */
+.about {
+    position: relative;
+    top: 100vh;
+    /* background: url(/bgx.jpg);
+    background-size: cover; */
 }
-.pic {
+/* .pic {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.pic img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    width: 500px;
-}
+} */
+
+
+
+
 section {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    padding: 50px;
     overflow: hidden;
     background: #252839;
 }
-section .head {
+
+.about section .circle {
     position: relative;
-    display: inline-block;
-    color: white;
-    text-decoration: underline;
-    font-size: 2rem;
+    overflow: hidden;
 }
-section .text {
-    position: relative;
+.about section .circle.circle1 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+.about section .circle.circle2 {
+    width: 200px;
+    height: 200px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+.about section h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.about section p {
+    color: #00cefe;
+}
+
+.about section h1 {
+    margin: 30px 0;
+    font-size: 8em;
+    transition: 0.5s;
+    line-height: 0.8em;
+    /* height: 100px;
+    width: 100px; */
+    margin-bottom: 20px;
     text-align: center;
     color: #00cefe;
-    margin: 40px;
-    max-width: 650px;
 }
-section .text span {
+.about section h1 span {
     position: relative;
-    display: inline-block;
+    text-transform: uppercase;
+    display: block;
+    /* transition: 0.5s; */
 }
+.about section h1 span:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 0;
+    width: 50%;
+    height: 30px;
+    background: #f00;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s;
+    z-index: 1;
+}
+.about section h1:hover span:nth-child(1)::before {
+    transform: scaleX(1);
+}
+.about section h1 span:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 0;
+    width: 52%;
+    height: 30px;
+    background: #f00;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.5s;
+    z-index: 1;
+}
+.about section h1:hover span:nth-child(2)::before {
+    transform: scaleX(1);
+}
+.about section h1 span hide {
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+.about section h1:hover span hide {
+    transition-delay: 1s;
+    color: #000;
+    opacity: 0;
+}
+.about section h1:hover span:nth-child(1) hide {
+    padding-right: 30px;
+}
+.about section h1:hover span:nth-child(2) hide {
+    padding-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:767px) {
     .pic img {

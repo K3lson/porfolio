@@ -10,14 +10,14 @@
 <body>
     <section class="banner" id="sec">
         <header>
-            <p class="logo">ₖₑₗᵥᵢₙ</p>
+            <p class="logo"><ion-icon name="contract-outline">ₖₑₗᵥᵢₙ</ion-icon></p>
             <div class="mainer">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about/about.html">About</a></li>
-                    <li><a href="tools/index.html">Tools</a></li>
-                    <li><a href="portfolio/portfolly2.html">Works</a></li>
-                    <li><a href="contact/contact.html">Contact</a></li>
+                    <li><a href="#sec">Home</a></li>
+                    <li><a href="#abouts">About</a></li>
+                    <li><a href="#tool">Tools</a></li>
+                    <li><a href="#wrk">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div id="toggle" onclick="toggle()" ></div>
@@ -28,7 +28,7 @@
             <p>I am a web designer and developer. I like to build creative designs from scratch and i experiment alot. 
                 I am quietly confident, naturally curious, and perpetually working on improving my skills one design problem at a time</p>
                 <div class="btn">
-                    <a href="about/about.html">Know More</a>
+                    <a href="#abouts">Know More</a>
                    </div>
         </div>
         <ul class="sci">
@@ -41,26 +41,129 @@
     <div id="navigation">
         <ul>
             <li style="--clr:#00ade1">
-                <a href="#" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                <a href="#sec" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
             </li>
             <li style="--clr: #ff6493">
-                <a href="about/about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+                <a href="#abouts" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
                 </li>
             <li style="--clr: #ffdd1c">
-                <a href="tools/index.html" data-text="&nbsp;Tools">&nbsp;Tools&nbsp;</a>
+                <a href="#tool" data-text="&nbsp;Tools">&nbsp;Tools&nbsp;</a>
             </li>
             <li style="--clr: rgb(113, 241, 156)">
-                <a href="portfolio/portfolly2.html" data-text="&nbsp;Works">&nbsp;Works&nbsp;</a>
+                <a href="#wrk" data-text="&nbsp;Works">&nbsp;Works&nbsp;</a>
             </li>
             <li style="--clr: #dceed4">
                 <a href="contact/contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
                 </li>
         </ul>
     </div>
-
-
+    <div class="about" id="abouts">
+        <section>
+            <h1>
+                <span>Do<hide>n't</hide></span>
+                <span><hide>Qu</hide>it</span>
+            </h1>
+            <p style="max-width: 250px; text-align: center; margin-left: 42%; font-style: italic;margin-bottom: 20px;">"Your hardest times often leads to the greatest moments of your life. Tough situations build strong people in the end"</p>
+            <div class="circle circle1">
+                <img src="about/bs.jpg" alt="">
+            </div>
+            <div class="circle circle2">
+                <img src="about/bs.jpg" alt="">
+            </div>
+            <div>
+                <!-- <h2 class="head">ABOUT</h2> -->
+            <p class="text">
+    <br>
+    I don’t like to define myself by the work I’ve done. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter.
     
-
+    <br>
+    
+    <br>
+    
+    Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them.
+    My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
+    
+    <br>
+    
+    <br>
+    
+    I like to develop expertise in a number of areas over the course of my life and career. I currently work remotely with a selected freelance client base and are open for new opportunities.
+    
+       </p>
+            </div>
+            
+        </section>
+    </div>
+    <div class="tools" id="tool">
+        <h2>Tools</h2>
+        <ul>
+            <li><ion-icon class="fa" name="logo-github"></ion-icon></li>
+            <li><ion-icon class="fa" name="logo-html5"></ion-icon></li>
+            <li><ion-icon class="fa" name="logo-css3"></ion-icon></li>
+            <li><ion-icon class="fa" name="logo-javascript"></ion-icon></li>
+            <li><ion-icon class="fa" name="logo-react"></ion-icon></li>
+        </ul>
+        <ul>
+            <li><img class="fab" src="tools/php.svg"></li>
+            <li><ion-icon class="fab" name="logo-npm"></ion-icon></li>
+            <li><ion-icon class="fab" name="logo-wordpress"></ion-icon></li>
+            <li><ion-icon class="fab" name="logo-nodejs"></ion-icon></li>
+            <li><ion-icon class="fab" name="logo-laravel"></ion-icon></li>
+        </ul>
+        <ul>
+            <li><ion-icon class="fa" name="logo-figma"></ion-icon></li>
+            <li><ion-icon  class="fa" name="logo-google"></ion-icon></li>
+            <li><ion-icon class="fa" name="logo-microsoft"></ion-icon></li>
+            <li><ion-icon class="fa" name="server-sharp"></ion-icon></li>
+            <li><ion-icon class="fa" name="logo-chrome"></ion-icon></li>
+        </ul>
+    </div>
+    <div class="bigBox" id="wrk">
+        <h3>MY WORK</h3>
+        <div class="card">
+            <div class="imgBx">
+                <img src="works/mask.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Mayo Clinic</h2>
+                <p>I cloned Mayo Clinic Landing page using <span style="font-weight: bold;">HTML and CSS</span></p>
+                <br>
+                <br>
+                <a href="https://github.com/K3lson/Mayo-Clinic">CODE</a>
+                <a href="https://k3lson.github.io/Mayo-Clinic/">LIVE DEMO</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="works/mask.png" alt="">
+            </div>
+            <div class="content">
+                <h2>First Portfolio</h2>
+                <p>TMy first portfolio. </p>
+                <br>
+                <br>
+                <a href="http://">CODE</a>
+                <a href="http://">LIVE DEMO</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="works/mask.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Card three</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor esse necessitatibus nulla cum facilis minima delectus nostrum voluptatem id voluptate, dolores eligendi quidem accusamus ducimus sed minus fuga exercitationem officiis?</p>
+                <br>
+                <br>
+                <a href="http://">CODE</a>
+                <a href="http://">LIVE DEMO</a>
+            </div>
+        </div>
+            <!-- <div class="element1"></div>
+            <div class="element2"></div> -->
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
         function toggle(){
             var sec = document.getElementById('sec');
