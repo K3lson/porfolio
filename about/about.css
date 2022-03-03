@@ -144,8 +144,116 @@ section {
 
 
 @media (max-width:767px) {
-    .pic img {
-        min-height: 100px;
-        width: 100%;
+    .about section .circle {
+        position: relative;
+        overflow: hidden;
     }
+    .about section .circle.circle1 {
+        width: 100px;
+        height: 100px;
+        float: left;
+        border-radius: 50%;
+        margin: 20px;
+        shape-outside: circle();
+    }
+    .about section .circle.circle2 {
+        display: none;
+        width: 200px;
+        height: 200px;
+        float: right;
+        border-radius: 50%;
+        margin: 20px;
+        shape-outside: circle();
+    }
+    .about section h2 {
+        color: #fff;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .about section p {
+        color: #00cefe;
+        font-size: 1em;
+    }
+    .about section .ret {
+        font-size: 0.7em;
+        margin-right: 80px;
+    }
+    .about section h1 {
+        margin: 30px 0;
+        font-size: 4em;
+        transition: 0.5s;
+        line-height: 0.8em;
+        /* height: 100px;
+        width: 100px; */
+        margin-bottom: 20px;
+        text-align: center;
+        color: #00cefe;
+    }
+    .about section h1 span {
+        position: relative;
+        text-transform: uppercase;
+        display: block;
+        /* transition: 0.5s; */
+    }
+    .about section h1 span:nth-child(1)::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 15px);
+        right: 0;
+        width: 50%;
+        height: 30px;
+        background: #f00;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .about section h1:hover span:nth-child(1)::before {
+        transform: scaleX(1);
+    }
+    .about section h1 span:nth-child(2)::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 15px);
+        left: 0;
+        width: 52%;
+        height: 30px;
+        background: #f00;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .about section h1:hover span:nth-child(2)::before {
+        transform: scaleX(1);
+    }
+    .about section h1 span hide {
+        transition: 0.5s;
+        transition-delay: 1s;
+    }
+    .about section h1:hover span hide {
+        transition-delay: 1s;
+        color: #000;
+        opacity: 0;
+    }
+    .about section h1:hover span:nth-child(1) hide {
+        padding-right: 30px;
+    }
+    .about section h1:hover span:nth-child(2) hide {
+        padding-right: 40px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
