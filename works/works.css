@@ -10,12 +10,13 @@
     background: #252839;
 }
 .bigBox .card .content h2 {
+    font-size: 2.6em;
     color: #000;
 }
 .bigBox .card {
     position: relative;
     max-width: 300px;
-    height: 215px;
+    height: 115px;
     background: goldenrod;
     margin: 40px 30px;
     padding: 20px 15px;
@@ -24,8 +25,20 @@
     box-sizing: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
 }
+.bigBox .card:nth-child(1) {
+        background: rgb(69, 218, 32);
+    }
+.bigBox .card:nth-child(3) {
+        background: rgb(130, 153, 126);
+    }
+.bigBox .card:nth-child(2) {
+        background: rgb(103, 103, 255);
+    }
+.bigBox .card:nth-child(4) {
+        background: rgb(255, 103, 103);
+    }
 .bigBox .card:hover {
-    height: 500px;
+    height: 450px;
 }
 .bigBox .card .imgBx {
     position: relative;
@@ -53,12 +66,13 @@
 .bigBox .card .content p {
     color: #000;
     word-wrap: break-word;
-    width: 300px;
+    max-width: 280px;
+    padding: 20px;
 }
 
 .bigBox .card .content a{
-    background: goldenrod;
-    border: 1px solid black;
+    background: rgba(255,255,255,0.2);
+    border: none;
     border-radius: 4px;
     color: #111;
     padding: 10px;
@@ -72,7 +86,7 @@
 .bigBox .card:hover .content {
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
+    margin-top: -100px;
     transition-delay: 0.3s;
 }
 
@@ -89,18 +103,31 @@
     }
     .bigBox .card {
         position: relative;
+        max-height: 55px;
         max-width: 250px;
-        height: 125px;
-        background: goldenrod;
-        margin: 60px 30px;
+        /* background: rgb(69, 218, 32); */
+        margin: 30px 30px;
         padding: 20px 15px;
         display: flex;
         flex-direction: column;
         box-sizing: 0 5px 20px rgba(0,0,0,0.5);
         transition: 0.3s ease-in-out;
     }
+    .bigBox .card:nth-child(1) {
+        background: rgb(69, 218, 32);
+    }
+    .bigBox .card:nth-child(3) {
+        background: rgb(130, 153, 126);
+    }
+
+    .bigBox .card:nth-child(2) {
+        background: rgb(103, 103, 255);
+    }
+    .bigBox .card:nth-child(4) {
+        background: rgb(255, 103, 103);
+    }
     .bigBox .card:hover {
-        height: 400px;
+        max-height: 350px;
     }
     .bigBox h3 {
         position: absolute;
@@ -112,7 +139,7 @@
     .bigBox .card .imgBx {
         position: relative;
         width: 160px;
-        height: 260px;
+        height: 170px;
         top: -60px;
         left: 20px;
         z-index: 1;
@@ -125,6 +152,7 @@
     .bigBox .card .content h2 {
         font-size: 1.5em;
         color: #000;
+        max-width: 210px;
     }
     .bigBox .card .content p {
         font-size: .7em;
@@ -134,8 +162,8 @@
         color: #000;
     }
     .bigBox .card .content a{
-        background: goldenrod;
-        border: 1px solid black;
+        background: rgba(255,255,255,0.2);
+        border: none;
         border-radius: 4px;
         color: #111;
         padding: 3px;
