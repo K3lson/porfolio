@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    top: 120vh;
+    top: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,16 +43,16 @@
 } */
 
 @media (max-width: 767px) {
-    /* .contact {
+    .contact {
         position: relative;
-        top: 100vh;
+        top: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: #252839;
         margin: 100px 50px;
-    } */
+    }
     .contact h2 {
         font-size: 2em;
         color: aliceblue;

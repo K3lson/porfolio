@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700,800&display=swap');
 @import url(about/about.css);
 @import url(tools/style.css);
-@import url(works/works.css);
+/* @import url(works/works.css); */
 @import url(contact.css);
+@import url(works/newwrk.css);
 
 * {
     margin: 0;

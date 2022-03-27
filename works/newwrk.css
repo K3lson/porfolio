@@ -1,0 +1,142 @@
+.bigBox {
+    position: relative;
+    top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    flex-wrap: wrap;
+    /* padding: 30px; */
+    background: #252839;
+}
+
+
+.navir {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+}
+.navir ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.navir ul li {
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.navir ul li.active {
+    background: #3e477c;
+    color: #eee;
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .itemBox {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: 5px 5px;
+    overflow: hidden;
+}
+.product .itemBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.product .itemBox .content {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 0px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(220px);
+}
+.product .itemBox .content p {
+    font-size: 1em;
+    width: 300px;
+    height: 200px;
+    word-wrap: break-word;
+    color: #3e477c;
+}
+.product .itemBox:hover .content {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(80px);
+    transition: 0.5s;
+    /* opacity: 1; */
+}
+.product .itemBox:hover img {
+    transition: 0.5s;
+    /* filter: blur(50px); */
+}
+.content p a {
+    position: relative;
+    display: inline-block;
+    background: #3e477c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 3px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.product .itemBox .content a:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+@media (max-width: 767px) {
+    .navir {
+    padding: 10px;
+    width: 767px;
+    /* margin: 40px auto; */
+    }
+    .navir ul li {
+        padding: 4px 10px;
+        margin: 3px;
+    }
+    .product .itemBox {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        margin: 5px 5px;
+        overflow: hidden;
+    }
+    .product .itemBox img {
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .product .itemBox .content {
+        width: 300px;
+        height: 200px;
+        /* padding: 20px; */
+        margin-left: 60px;
+        text-align: center;
+        transition: 0.5s;
+        transform: translateY(220px);
+    }
+    .product .itemBox .content p {
+        font-size: 1em;
+        width: 180px;
+        height:150px;
+        word-wrap: break-word;
+        color: #111;
+    }
+}
