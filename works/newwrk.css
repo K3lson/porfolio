@@ -1,10 +1,10 @@
 .bigBox {
     position: relative;
-    top: 100vh;
+    top: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
+    height: 600px;
     flex-wrap: wrap;
     /* padding: 30px; */
     background: #252839;
@@ -72,14 +72,14 @@
     color: #3e477c;
 }
 .product .itemBox:hover .content {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.5);
     transform: translateY(80px);
     transition: 0.5s;
     /* opacity: 1; */
 }
 .product .itemBox:hover img {
     transition: 0.5s;
-    /* filter: blur(50px); */
+    filter: blur(50px);
 }
 .content p a {
     position: relative;
@@ -100,43 +100,42 @@
 
 @media (max-width: 767px) {
     .navir {
-    padding: 10px;
-    width: 767px;
-    /* margin: 40px auto; */
+        width: 430px;
+    }
+    .navir ul {
+        width: 450px;
+        flex-wrap: wrap;
+        margin-left: -53px;
+        transition: 0.5s;
     }
     .navir ul li {
-        padding: 4px 10px;
-        margin: 3px;
-    }
-    .product .itemBox {
-        position: relative;
-        width: 300px;
-        height: 200px;
-        margin: 5px 5px;
-        overflow: hidden;
+        font-size: 0.8em;
+        padding: 4px;
+        margin: 5px;
     }
     .product .itemBox img {
         position: absolute;
         top: 0;
-        left: 60px;
-        width: 300px;
-        height: 150px;
+        left: 0;
+        width: 165px;
         object-fit: cover;
+        cursor: pointer;
+    }
+    .product .itemBox {
+        width: 165px;
+        height: 100px;
     }
     .product .itemBox .content {
-        width: 300px;
-        height: 200px;
-        /* padding: 20px; */
-        margin-left: 60px;
-        text-align: center;
-        transition: 0.5s;
-        transform: translateY(220px);
+        width: 165px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .product .itemBox .content p {
-        font-size: 1em;
-        width: 180px;
-        height:150px;
         word-wrap: break-word;
-        color: #111;
+        font-size: 0.8em;
+        width: 300px;
+    }
+    .product .itemBox:hover .content {
+        transform: translateY(30px);
     }
 }

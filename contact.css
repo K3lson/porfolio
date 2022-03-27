@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    top: 100vh;
+    top: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@
 @media (max-width: 767px) {
     .contact {
         position: relative;
-        top: 80vh;
+        top: 140vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
